@@ -21,7 +21,7 @@ public class FileLesson {
         try (FileInputStream fileInputStream = new FileInputStream("C:\\proxies.txt");){
             List<String> strings = IOUtils.readLines(fileInputStream);
             for (String string : strings) {
-                System.out.println(string);
+                //System.out.println(string);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -30,23 +30,4 @@ public class FileLesson {
 
     }
 
-
-
-
-
-    private static void readExample2() {
-
-        File file = new File("C:\\testing.txt");
-        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
-
-            String sCurrentLine;
-                while ((sCurrentLine = br.readLine()) != null) {
-                    System.out.println(sCurrentLine);
-                }
-
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 }
