@@ -9,4 +9,4 @@ Home task
 7)select user_id (one column) and user_name+surname(second column). Perhaps u will need some concatenate aggregation method… google will help :).  avoid empty results
 8)select all users with ‘23’ in address column in user_verifications table
 9)select all users without state
-10)add new column to session table ‘time_dif’ (u can use ur sql UI tool) and write here result from #19 query
+10)add new column to user table ‘time_dif’ (u can use ur sql UI tool) and write here result from #19 query
